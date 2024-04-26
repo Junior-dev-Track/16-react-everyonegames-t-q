@@ -1,0 +1,10 @@
+.card {
+  min-height: 25em;
+  max-width: 15rem;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    min-height: 25rem;
+    max-width: 15rem;
+  }
+}

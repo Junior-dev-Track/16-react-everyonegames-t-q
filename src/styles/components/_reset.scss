@@ -1,0 +1,32 @@
+// @font-face {
+//     font-family: "font-1";
+//     src: url(../assets/fonts/JosefinSans-Medium.ttf);
+//   }
+
+//   $font-1: "font-1", sans-serif;
+
+$color-1: #84dccf;
+$color-2: #ef626c;
+$grey: #312f2f;
+$fake-black: #22181c;
+$fake-white: #f6e8ea;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $grey;
+  min-height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}

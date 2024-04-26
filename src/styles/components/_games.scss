@@ -1,6 +1,9 @@
 .games {
+  grid-area: games;
+  margin: 1.6rem;
   ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.6rem;
   }
 }

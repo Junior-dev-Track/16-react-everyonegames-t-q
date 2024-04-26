@@ -4,22 +4,25 @@ import Card from './Card';
 
 export default function Games() {
   const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     axios
-      .get(`https://api.rawg.io/api/games?key=f43abf80813f4a159ef4e1fc728e12f0`)
+      .get(
+        `https://api.rawg.io/api/games?key=${
+          import.meta.env.VITE_API_KEY
+        }&page=${page}`
+      )
       .then((res) => setData(res.data.results));
   }, []);
 
   return (
-    <div className="games">
+    <main className="games">
       <ul>
-        {data
-          .filter((game) => game.name[0])
-          .map((game) => (
-            <Card key={game.name} game={game} />
-          ))}
+        {data.map((game) => (
+          <Card key={game.name} game={game} />
+        ))}
       </ul>
-    </div>
+    </main>
   );
 }

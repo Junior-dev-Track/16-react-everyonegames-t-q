@@ -1,0 +1,6 @@
+.homeGrid {
+  display: grid;
+  grid-template:
+    'header header'
+    'aside games';
+}

@@ -2,9 +2,24 @@
   min-height: 25em;
   max-width: 15rem;
   overflow: hidden;
+  font-family: $font-1, sans-serif;
   img {
     object-fit: cover;
     min-height: 25rem;
     max-width: 15rem;
+    background-position: center;
+    background-size: contain;
+  }
+
+  h2 {
+    color: $fake-white;
+  }
+
+  p {
+    color: $color-1;
+  }
+
+  li {
+    color: $color-2;
   }
 }

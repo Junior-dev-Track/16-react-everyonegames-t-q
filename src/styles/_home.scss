@@ -1,6 +1,7 @@
 .homeGrid {
   display: grid;
+  justify-content: start;
   grid-template:
-    'header header'
+    'searchbar searchbar'
     'aside games';
 }

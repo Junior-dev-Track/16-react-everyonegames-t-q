@@ -1,0 +1,15 @@
+input[type="search"] {
+        grid-area: searchbar;
+        height: 3rem;
+        width: 80%;
+        background-color: $fake-white;
+        color: $fake-black;
+        border: none;
+        box-shadow: 0 0 3px 1px $color-2;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+        outline: none;
+        padding-left: 2em;
+    
+}

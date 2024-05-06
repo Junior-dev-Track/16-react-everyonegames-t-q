@@ -14,12 +14,12 @@ const Card = ({ game }) => {
         </ul>
       </div>
     </li>
-
-    // <li className="card">
-    //   <img src={game.background_image} alt={game.name} />
-    //   <div className="infos"></div>
-    // </li>
   );
 };
 
 export default Card;
+
+// <li className="card">
+    //   <img src={game.background_image} alt={game.name} />
+    //   <div className="infos"></div>
+    // </li>

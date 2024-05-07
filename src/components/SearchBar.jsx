@@ -16,7 +16,6 @@ const SearchBar = ({ data, setFilteredData }) => {
   };
 
   const handleFocus = () => {
-    // Déplacer le curseur après l'icône lors du focus sur le champ de recherche
     if (inputRef.current) {
       inputRef.current.setSelectionRange(2, searchTerm.length);
     }

@@ -2,4 +2,36 @@ aside {
     grid-area: aside;
     width: 20rem;
     background-color: $fake-black;
+    font-family: $font-1;
+
+    .icon {
+        margin-bottom: 50px;
+        text-align: center;
+
+        img {
+            margin-top: 20px;
+        }
+    }
+
+    .checkbox-div {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        animation: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $color-1;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 20px;
+        }
+
+       label {
+        color: $fake-white;
+        font-size: 1.4rem;
+       }
+      }
 }

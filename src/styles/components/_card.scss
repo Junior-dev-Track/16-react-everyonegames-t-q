@@ -1,8 +1,17 @@
 .card {
-  min-height: 25em;
+  min-height: 30em;
   max-width: 15rem;
   overflow: hidden;
   font-family: $font-1, sans-serif;
+  position: relative;
+  box-shadow: 0 0 3px 1px rgb(85, 104, 115);
+  border-radius: 10px;
+  transition: 0.3s;
+
+  &:hover img{
+    opacity: 0.7;
+  }
+
   img {
     object-fit: cover; 
     height: 25em; 
@@ -11,19 +20,35 @@
     border-radius: 10px;
     margin-bottom: 5px;
     cursor: pointer;
-
   }
 
-  .game-details {
+  .infos {
     background-color: $fake-black;
     border-radius: 10px;
     padding: 10px;
-    height: 180px;
-    overflow: hidden; 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 47px;
+    // bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &:hover .infos {
+    opacity: 1;
+    visibility: visible;
   }
 
   h2 {
     color: $fake-white;
+    text-align: center;
+    margin: 2px 5px;
+  }
+
+  h3 {
+    color: $color-1;
     margin: 10px 0;
   }
 
@@ -34,13 +59,13 @@
   }
 
   ul {
-    display: block;
+    display: flex;
     width: 100%;
   }
 
   li {
     color: $color-2;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     
   }
 }
